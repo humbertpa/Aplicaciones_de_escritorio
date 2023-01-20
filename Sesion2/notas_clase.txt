@@ -1,0 +1,56 @@
+Sitio web fluido:
+    -Estira o comprime los elementos al 100% del display en el que está (Puede verse mal si el display es muy grande o pequeño)
+
+Sitio web responsivas:
+    -Se adaptan ( o acomoda ) al tamaño de la pantalla del display( Cambia el orden de elementos, agrega scrollbar, etc)
+
+Metatag/Metaetiqueta:
+    -Información extra que se le da al elemento
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//     
+//     
+//     
+//     ooo        ooooo               .                           .    o8o                                       .                      
+//     `88.       .888'             .o8                         .o8    `"'                                     .o8                      
+//      888b     d'888   .ooooo.  .o888oo  .oooo.    .ooooo.  .o888oo oooo   .ooooo oo oooo  oooo   .ooooo.  .o888oo  .oooo.    .oooo.o 
+//      8 Y88. .P  888  d88' `88b   888   `P  )88b  d88' `88b   888   `888  d88' `888  `888  `888  d88' `88b   888   `P  )88b  d88(  "8 
+//      8  `888'   888  888ooo888   888    .oP"888  888ooo888   888    888  888   888   888   888  888ooo888   888    .oP"888  `"Y88b.  
+//      8    Y     888  888    .o   888 . d8(  888  888    .o   888 .  888  888   888   888   888  888    .o   888 . d8(  888  o.  )88b 
+//     o8o        o888o `Y8bod8P'   "888" `Y888""8o `Y8bod8P'   "888" o888o `V8bod888   `V88V"V8P' `Y8bod8P'   "888" `Y888""8o 8""888P' 
+//                                                                                888.                                                  
+//                                                                                8P'                                                   
+//     
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////                                                                              "                                                     
+
+Viewport:
+    -Es el área de una página web donde el contenido es visible para el usuario
+    -El tamaño del viewport varía de acuerdo al tamaño de la pantalla del dispositivo en el cual la página web es visible
+
+CSS Media Queries:
+    -Es una técnica de CSS que permite incluir bloques de CSS únicamente cuando una condición se cumple
+    -Permiten agregar puntos de ruptura o "breakpoints" para especificar un comportamiento en el diseño: Especifica el comportamiento de un elemento hasta cierto punto, despues del cual tendrá otro comportamiento.
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+//     
+//     
+//     
+//       .oooooo.              o8o        .o8       ooooo                                                        .   
+//      d8P'  `Y8b             `"'       "888       `888'                                                      .o8   
+//     888           oooo d8b oooo   .oooo888        888          .oooo.   oooo    ooo  .ooooo.  oooo  oooo  .o888oo 
+//     888           `888""8P `888  d88' `888        888         `P  )88b   `88.  .8'  d88' `88b `888  `888    888   
+//     888     ooooo  888      888  888   888        888          .oP"888    `88..8'   888   888  888   888    888   
+//     `88.    .88'   888      888  888   888        888       o d8(  888     `888'    888   888  888   888    888 . 
+//      `Y8bood8P'   d888b    o888o `Y8bod88P"      o888ooooood8 `Y888""8o     .8'     `Y8bod8P'  `V88V"V8P'   "888" 
+//                                                                         .o..P'                                    
+//                                                                         `Y8P'                                     
+//                                                                                                                  
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Overflow: El elemento se sale de la pantalla. Hay propiedades que lo bloquean, lo esconden, o le ponen un scrollbar
+position: propiedad de CSS que indica que cuando es "absolute" indica que será respecto al borde del display
+
+Las propiedades "top" y "left" cambian la posicion de origen del borde del display
+

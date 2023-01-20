@@ -1,0 +1,18 @@
+section .gallery > div{
+    height: 100px;
+    width: 25%;
+    background-color: green;
+    float: left;
+
+    border: solid 1px darkcyan;
+    box-sizing: border-box;
+
+}
+
+/*
+flow recorre los elementos en alguna dirección especificada
+*/
+
+section .gallery::after{
+    content: "hola";
+}
