@@ -30,8 +30,8 @@ nav ul {
 
 .carta {
     background-color: white;
-    width: 80%;
-    height: max-content;
+    width: 60%;
+    height: 200%;
     margin: auto;
     margin-top: 10%;
     border-radius: 10px;
@@ -44,7 +44,6 @@ nav ul {
     width: 50%;
     height: max-content;
     float: left;
-    border: solid 1px darkcyan;
     box-sizing: border-box;
 }
 
