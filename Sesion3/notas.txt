@@ -1,0 +1,16 @@
+Box sizing: 
+La propiedad "box content" permite decidir que el tamaño del elemento es el contenido sin incluir padding o márgenes-. "Border-box" toma el tamaño total de la caja incluyendo contenido, padding y margin para el tamaño total.
+
+nivel de especificidad del selector:
+
+id class tag
+
+tag es el nombre el elemento (div, section, etc)
+
+ejemplo emmet
+
+ul>li*2{hola} hace una lista con dos elementos de contenido "hola"
+
+"Float" apilará elementos en la dirección que le digas. float left los colocará en fila de izquierda a derecha
+
+"clear" evita que los elementos cambien de renglón si hay espacio suficiente. Los mantiene separados

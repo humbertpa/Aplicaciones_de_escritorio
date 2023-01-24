@@ -1,0 +1,91 @@
+.gallery{
+    width: 100%;
+}
+
+.gallery::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.gallery > div.item{
+    width: 25%;
+    height: 80px;
+    background-color: beige;
+    border: solid 1px black;
+    box-sizing: border-box;
+    text-align: center;
+    float: left;
+}
+
+.fila{
+    width: 100%;
+}
+
+.fila::afer{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.fila > div[class^="columna-"]{
+    background-color: blanchedalmond;
+    border: solid 1px black;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    height: 60px;
+    text-align: center;
+}
+
+.fila >div.columna-50{
+    width: 50%;
+}
+
+.fila >div.columna-25{
+    width: 25%;
+}
+
+.fila >div.columna-75{
+    width: 75%;
+}
+
+.fila.rtl > div[class^="columna-"]{
+    float: right;
+}
+
+@media screen and (max-width: 1024px) {
+    .fila > div.columna-tablet-100{
+        width: 100%;
+    }
+
+    .fila > div.columna-tablet-75{
+        width: 75%;
+    }
+
+    .fila > div.columna-tablet-50{
+        width: 50%;
+    }
+
+    .fila > div.columna-tablet-25{
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 676px) {
+    .fila > div.columna-mobile-100{
+        width: 100%;
+    }
+
+    .fila > div.columna-mobile-75{
+        width: 75%;
+    }
+
+    .fila > div.columna-mobile-50{
+        width: 50%;
+    }
+
+    .fila > div.columna-mobile-25{
+        width: 25%;
+    }
+}
