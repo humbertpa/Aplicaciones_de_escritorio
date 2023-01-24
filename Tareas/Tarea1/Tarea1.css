@@ -26,14 +26,17 @@ nav ul {
 
   body{
     background-color: beige;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
-
 .carta {
     background-color: white;
     width: 60%;
     height: 200%;
     margin: auto;
-    margin-top: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     border-radius: 10px;
     padding: 50px;
     
