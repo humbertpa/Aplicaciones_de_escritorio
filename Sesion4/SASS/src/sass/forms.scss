@@ -1,0 +1,48 @@
+@import "variables";
+
+input{
+    border-color: $color-primario;
+}
+
+@mixin boton-default{
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-family: serif;
+}
+
+.button{
+    @include boton-default{
+        background-color: $color-default;
+    }; // @include copia las propiedades del mixin
+}
+
+.button2{
+    @include boton-default{
+    background-color: red;
+    }; // @include copia las propiedades del mixin
+}
+
+.button-primary{
+    @extend .button;
+   // background-color: $color-primario;
+}
+
+//@include es como una interfaz, jala las propiedades guardadas en el molde. Extends sobreescribe propiedades dadas con selectores anteriores.
+
+
+@mixin tablet{
+    @media screen and (max-width:1024){
+        @content;
+    }
+}
+@include tablet{
+    .columna-tablet-50{
+        width: 50%;
+    }
+}
+
+@include tablet{
+    .gallery > div{
+        width:25%;
+    }
+}

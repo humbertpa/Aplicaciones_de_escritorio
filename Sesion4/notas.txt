@@ -1,0 +1,53 @@
+Crear proyecto con sass
+
+npm init
+npm install sass
+
+crear carpeta output
+crear carpeta src al mismo nivel de output
+crear carpeta sass dentro de src
+
+
+exportar codigo usando archivo .scss a través de:
+    npm run scripts
+un archivo .css y .css.map se guardarán en output\css
+
+Para que no se cree el archivo .map, se agrea a scripts 
+    --no-source-map
+"styles" de packet.json lucirá de la siguiente manera:
+    "styles": "sass src/sass:output/css --no-source-map",
+El archivo .map lo crea sass para indicar qué archivo .scss creó qué archivo .css . No es necesario para nosotros en este momento.
+
+para subir todo a github sin subir los archivos .map, dentro del archivo .gitignore se agrega:
+    output/css/*.map
+
+Para que no se suba una carpeta, se puede colocar el nombre de la carpeta en el directorio raiz del repositorio para afectar todo el repositorio, o hacer otro archivo .gitignore dentro del directorio con el archivo que se desea ignorar.
+El asterisco indica que puede ser cualquier nombre mientras la terminación sea .map
+
+Para no excluir un archivo de un directorio que va a ignorarse, se usa "!"
+    !output/css/estilos.css.map
+
+sass permite guardar variables, como un lenguaje de programación. Se pueden guardar variables en otros documentos para importar en el archivo .sass que necesitemos. Este archivo que guarda variables y no estilos se llama "archivo parcial". Si el nombre de este archivo no inicia con "_", se creará un archivo vacio .css en la carpeta de output. Para que no ocurra esto, se coloca "_" al inicio.
+
+@extends es una rela que permite etender una clase o seletor previamente definido. Permite al desarrollador extender las propiedades de CSS.
+Se le puede dar el mismo gormato a dos elementos en css, luego para asignar una característica diferente a otro objeto, se usa @extend. Ejemplo:
+
+    .button,.button-primary{
+        background-color: $color-default;
+        font-size: 16px;
+        padding: 6px 12px;
+        color: #333;
+    }
+
+    .button-primary{
+        @extend .button;
+        background-color: $color-primario;
+    }
+
+
+Errores comunes:
+
+no hacer "npm init"
+no colocar "styles" en "scripts" dentro de package.json
+no importar el archivo scss en otro para importar variables.
+tener dos archivos parciales con el mismo nombre spero uno sin "_" en el inicio
