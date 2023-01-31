@@ -1,0 +1,44 @@
+@use 'sass:math';
+
+.fila{
+    width: 100%;
+}
+
+.fila::after{
+    content:"";
+    display: table;
+    clear:both;
+}
+
+.fila > div[class^="columna"]{
+    float: left;
+    width: 100%;
+}
+
+.fila{
+    color: blue;
+    &.rtl{
+        >div{
+            float: right;
+        }
+    }
+}
+
+
+$position: "bottom";
+$columnas: 12;
+
+@function getWidth($cols){
+    @return math.div($cols,$columnas)*100%;
+}
+
+.tooltip-#{$position}{
+    #{$position}: 10px;
+    width: getWidth(1);
+}
+
+@for $i from 1 through $columnas{
+    .columna-#{$i}{
+        width: getWidth($i);
+    }
+}

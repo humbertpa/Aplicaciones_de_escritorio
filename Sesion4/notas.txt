@@ -9,7 +9,7 @@ crear carpeta sass dentro de src
 
 
 exportar codigo usando archivo .scss a través de:
-    npm run scripts
+    npm run styles
 un archivo .css y .css.map se guardarán en output\css
 
 Para que no se cree el archivo .map, se agrea a scripts 
