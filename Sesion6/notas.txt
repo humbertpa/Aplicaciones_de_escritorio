@@ -1,0 +1,24 @@
+Códigos de estado de respuesta HTTP
+
+Los códigos de estado de respuesta HTTP indican si se ha completado satisfactoriamente una solicitud HTTP específica. Las respuestas se agrupan en cinco clases:
+
+-Respuestas informativas (100–199),
+-Respuestas satisfactorias (200–299),
+-Redirecciones (300–399),
+-Errores de los clientes (400–499),
+-Errores de los servidores (500–599).
+
+Tipos de datos:
+-Primitivos: String, Number, Boolean, Null, Undfined, Symbol
+-Estructurados/Compuestos: Arreglo, Lista, funciones, objeto,etc...
+
+
+
+
+
+
+
+
+Lista de errores: 
+
+https://developer.mozilla.org/es/docs/Web/HTTP/Status
