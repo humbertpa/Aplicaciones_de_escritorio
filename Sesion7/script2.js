@@ -1,0 +1,1 @@
+import { nombre } from "/common.js";
