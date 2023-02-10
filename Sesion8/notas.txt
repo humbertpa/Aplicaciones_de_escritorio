@@ -1,0 +1,15 @@
+Cada página tiene un "entry point", que es el inicio de la estructura del proyecto. Es el archivo de entrada de la aplicación web.
+
+Un módulo es un archivo que tiene funcionalidades. No va a afectar el código excepto cuando se le diga a través del export.
+
+Si se escribiese como "const version = require("animal");", se buscaría una carpeta en node_modules llamada animal, por lo que se tiene que colocar como const version = require("./animal");
+
+Si exportas una clase como module.exports = Animal; , será solo una instancia, y si declaras dos variables en otro archivo como si fueran instancias, serían compartidos.
+Si quieres que sean dos instancias diferentes del mosmo objeto, se debe escribir como module.exports = new Animal();
+
+Misma instancia:     module.exports = Animal;
+Diferente instancia: module.exports = new Animal();
+
+También se puede hacer en el archivo destino si se coloca como: 
+
+const animal1 = new Animal();

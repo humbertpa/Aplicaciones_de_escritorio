@@ -1,0 +1,1 @@
+Cuando se sube un proyecto a github, se debe ignorar la carpeta node_modules porque es muy pesada. Para descargar los modulos al clonar un proyecto, se corre el comando "npm install".
