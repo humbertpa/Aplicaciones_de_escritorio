@@ -13,3 +13,7 @@ Diferente instancia: module.exports = new Animal();
 También se puede hacer en el archivo destino si se coloca como: 
 
 const animal1 = new Animal();
+
+los "app.get" tienen que colocarse en orden, si llega a haber una instrucción que cumple las condiciones antes de la que deseas que se ejecute, node ejecutará la primera. Por eso, el comodin para endpoints inexistentes debe ir al final.
+
+app tiene que existir solo en un archivo, debido a que si se vuelve a declarar en index, se usará esa instancia en vez de la que está en otro archivo.
