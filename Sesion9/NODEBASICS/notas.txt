@@ -1,0 +1,19 @@
+Cuando se sube un proyecto a github, se debe ignorar la carpeta node_modules porque es muy pesada. Para descargar los modulos al clonar un proyecto, se corre el comando "npm install".
+
+En package.json, en scripts, hay uno llamado "dev".
+Para correr "nodemon .", se tiene que ejecutar el script a través de "npm run dev"
+
+"==="( si y solo si) no solo compara el valor del dato, sino el tipo de dato: 
+'5' == 5    true
+'5' === 5   false
+
+Para app.get("/", authMiddleware, function (req, res)... , si se desea enviar un html en la misma carpeta, se usa "__dirname".
+
+    app.get("/", authMiddleware, function (req, res) {
+        res.sendFile(__dirname + '/index.html')
+
+    }
+    );
+
+
+Hay equipos que usan "/" y otros que usan "\", y para no poner if's , se usa l alibrería de node "path"
