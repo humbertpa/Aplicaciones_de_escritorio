@@ -17,3 +17,5 @@ Para app.get("/", authMiddleware, function (req, res)... , si se desea enviar un
 
 
 Hay equipos que usan "/" y otros que usan "\", y para no poner if's , se usa l alibrería de node "path"
+
+Cuando se inicia sesion, primero se tiene que identificar al usuario, y despues validar los permisos pertinentes. Son dos middlewares

@@ -1,27 +1,17 @@
 const path = require('path')
 const express = require('express')
+const middlewares = require('./src/middlewares')
 
 function middleware(req, res, next) {
     console.log("pasa por aqui");
     next();
 }
 
-function authMiddleware(req, res, next) {
-
-    const token = req.query.token;
-    if (token === "123") {
-        req.usuario = "John doe"
-        next();
-    } else {
-        res.status(401).send("Not Authenticated")
-    }
-}
-
 module.exports = function (app) {
 
     app.use('/assets', express.static(path.join(__dirname,'assets')));
 
-    app.get("/", authMiddleware, function (req, res) {
+    app.get("/", middlewares.auth, function (req, res) {
         //res.send("Usuario validado");
         //console.log("api works llego a root");
         const ruta = path.join(__dirname, 'index.html');
@@ -34,11 +24,11 @@ module.exports = function (app) {
         res.send("Lista de usuarios con token");
     }
 
-    app.get("/usuarios", authMiddleware, cargarUsuarios);
+    //app.get("/usuarios", authMiddleware, cargarUsuarios);
 
-    app.get("/usuarios/:id", authMiddleware, function (req,res) {
+    app.get("/usuarios/:id", middlewares.auth, function (req,res) {
         res.send('Datos del usuario' + req.params.id);
-        
+
     });
 
     app.get('/assets/:archivo', function (req, res) {
@@ -50,8 +40,6 @@ module.exports = function (app) {
         console.log(req.body);
         res.send('datos correctos');
     });
-
-
 
     app.get("*", function (req, res) {
         res.status(404).send("Pagina no encontrada");
