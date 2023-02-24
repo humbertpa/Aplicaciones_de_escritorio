@@ -19,6 +19,10 @@ module.exports = function (app) {
 
     });
 
+    app.get('/',function (req,res) {
+        res.render('inicio')
+    })
+
     function cargarUsuarios(req, res) {
         console.log("Ejecucion de cargarUsuarios");
         res.send("Lista de usuarios con token");

@@ -7,6 +7,10 @@ const port = 3000;
 
 const app = express();
 
+app.engine('handlebars',engine());
+app.set('view engine','handdlebars');
+app.set('views','./src/views');
+
 app.use('',routes); // se indica que se usará el middleware que se está importando
 
 rutas(app);
