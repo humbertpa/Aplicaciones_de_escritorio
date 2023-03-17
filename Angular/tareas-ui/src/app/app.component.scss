@@ -1,0 +1,23 @@
+.panels {
+    height: 100%;
+    width: 100%;
+}
+
+
+$ancho: 30%;
+
+app-sidenav{
+   float: left;
+    height: 100%;
+    width: $ancho;
+}
+
+app-galeria{
+    @extend app-sidenav;
+    width: $ancho;
+}
+
+app-galeria{
+    @extend app-sidenav;
+    width: $ancho;
+}

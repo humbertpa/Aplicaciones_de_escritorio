@@ -1,0 +1,7 @@
+ng generate component <nombre del componente> crea todos los archivos de un componente nuevo(html, sass, css, spec.ts, ts)
+Los componentes que se generen de esta forma se mantienen constantes en el navegador.
+
+Se puede generar componentes dentro de carpetas usando:
+ng generate component <nombre de carpeta>/<nombre del componente>
+
+'ng generate component' es igual a 'ng g c' 

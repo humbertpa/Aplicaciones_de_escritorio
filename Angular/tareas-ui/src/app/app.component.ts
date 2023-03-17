@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tareas-ui';
+  nombre:string = 'Humberto'
+
+  constructor(){
+    setTimeout(()=>{
+      this.nombre = 'Peñuelas';
+    },3000);
+  }
 }
