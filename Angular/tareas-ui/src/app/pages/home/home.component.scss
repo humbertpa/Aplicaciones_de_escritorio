@@ -4,5 +4,9 @@ div {
     border-style: solid;
     border-color: red;
     color: white;
-    height: 100%;
+    width: auto;
+    height: fit-content;
+    >div{
+        height: auto;
+    }
 }
