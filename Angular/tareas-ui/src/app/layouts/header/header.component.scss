@@ -1,9 +1,13 @@
-
 div {
-    background-color: black;
-    border-width: 2px;
-    border-style: solid;
-    border-color: red;
-    color: white;
-    width: 100%;
-  }
+  background-color: black;
+  border-width: 2px;
+  border-style: solid;
+  border-color: red;
+  color: white;
+  width: 100%;
+}
+
+div a,h2 {
+  display: inline-block;
+  margin-right: 20px;
+}

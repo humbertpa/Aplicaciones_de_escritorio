@@ -7,11 +7,12 @@ interface Tarea {
 }
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-tareas',
+  templateUrl: './tareas.component.html',
+  styleUrls: ['./tareas.component.scss']
 })
-export class HomeComponent implements OnInit {
+
+export class TareasComponent implements OnInit {
 
   tarea: Tarea = {
     titulo: '',
@@ -50,22 +51,14 @@ export class HomeComponent implements OnInit {
     }, 1000);
   }
 
-  newTarea(): void{
-    this.tareas.push(this.tarea)
+  newTarea(): void {
+    const clon = { ...this.tarea }
+    this.tareas.push(clon)
+    console.log(clon.titulo)
+    this.tarea.titulo = '';
   }
 
-  setTitulo(e: KeyboardEvent):void{
-    this.tarea.titulo = (e.target && e.target.value) ? e.target.value : '';
-
+  setTitulo(e: Event): void {
+    this.tarea.titulo = (e.target as HTMLInputElement).value;
   }
-
-
-  constructor() {
-   /*  console.log('Constructor');
-    setTimeout(() => {
-      this.cargando = false;
-      console.log('Dejo de cargar');
-    }, 3000) */
-  }
-
 }

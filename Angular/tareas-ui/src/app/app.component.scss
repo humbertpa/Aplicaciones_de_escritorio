@@ -21,3 +21,12 @@ app-galeria{
     @extend app-sidenav;
     width: $ancho;
 }
+
+.panels app-sidenav {
+    float: left;
+    width: 200px; /* adjust width as needed */
+  }
+
+  .panels router-outlet {
+    margin-left: 220px; /* adjust margin as needed */
+  }

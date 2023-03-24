@@ -10,3 +10,9 @@ div {
         height: auto;
     }
 }
+
+input,textarea{
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+}
