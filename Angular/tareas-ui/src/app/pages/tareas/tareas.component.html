@@ -1,4 +1,4 @@
-<div>
+<!-- <div>
     <div *ngIf="!cargando">Cargado</div>
     <div *ngIf="cargando">Cargando...</div>
 
@@ -14,4 +14,11 @@
         {{item.titulo}}
     </div>
 
+</div> -->
+
+<div>
+    <h2>Lista de tareas</h2>
+    <div *ngFor="let item of tareas">
+        {{item.titulo}}
+    </div>
 </div>

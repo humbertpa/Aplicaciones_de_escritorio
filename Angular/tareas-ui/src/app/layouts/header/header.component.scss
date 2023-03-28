@@ -1,13 +1,37 @@
 div {
-  background-color: black;
-  border-width: 2px;
-  border-style: solid;
-  border-color: red;
-  color: white;
-  width: 100%;
+  padding-left: 2%;
+  background-color: darkgray;
+  height: 7%;
 }
 
-div a,h2 {
+h2 {
   display: inline-block;
   margin-right: 20px;
+}
+
+
+a {
+
+  width: 100px;
+  height: 100%;
+  color: black;
+
+  display: inline-block;
+
+  transition: background-color 0.2s;
+
+  text-align: center;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  line-height: 100px;
+
+  &:hover {
+    background-color: lightgray;
+  }
+
+  &:active {
+    background-color: black;
+    color: white;
+  }
 }

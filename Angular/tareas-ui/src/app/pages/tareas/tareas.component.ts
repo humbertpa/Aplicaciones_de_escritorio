@@ -1,10 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Subscriber } from 'rxjs';
+import { Tarea } from 'src/app/shared/interfaces/tarea';
 
-interface Tarea {
-  titulo: string;
-  descripcion?: string; // el signo de interrogación significa que es opcional
-  status: string;
-}
+import { TareaService } from 'src/app/shared/services/tarea.service';
 
 @Component({
   selector: 'app-tareas',
@@ -14,51 +12,20 @@ interface Tarea {
 
 export class TareasComponent implements OnInit {
 
-  tarea: Tarea = {
-    titulo: '',
-    descripcion: '',
-    status: 'new'
-  };
+  tareas: Tarea[] = [];
 
-  tareas: Array<Tarea> = [];
-
-  titulo: string = '';
+  constructor(private tareaService: TareaService) {
+    this.traerTareas;
+  }
 
   ngOnInit(): void {
-    console.log('Listo para iniciar la peticion');
-    this.getTareas();
+    this.traerTareas();
   }
 
-  cargando: boolean = true;
-
-
-  getTareas() {
-    setTimeout(() => {
-      this.tareas = [
-        {
-          titulo: 'tarea 1',
-          descripcion: 'Lorem Ipsum 1',
-          status: 'new'
-        },
-        {
-          titulo: 'tarea 2',
-          descripcion: 'Lorem Ipsum 2',
-          status: 'in progress'
-        }
-      ];
-      this.cargando = false;
-      console.log(this.tareas);
-    }, 1000);
+  traerTareas() {
+    this.tareaService.find().subscribe(res => {
+      this.tareas = res;
+    });
   }
 
-  newTarea(): void {
-    const clon = { ...this.tarea }
-    this.tareas.push(clon)
-    console.log(clon.titulo)
-    this.tarea.titulo = '';
-  }
-
-  setTitulo(e: Event): void {
-    this.tarea.titulo = (e.target as HTMLInputElement).value;
-  }
 }

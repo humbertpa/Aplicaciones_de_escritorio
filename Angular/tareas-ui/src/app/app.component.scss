@@ -1,32 +1,34 @@
+.panels,app-header,app-footer{
+    margin: 0%;
+}
+
+
+
 .panels {
     height: 100%;
     width: 100%;
 }
 
-
 $ancho: 30%;
 
-app-sidenav{
-   float: left;
+app-sidenav {
+    float: left;
     height: 100%;
     width: $ancho;
 }
 
-app-galeria{
-    @extend app-sidenav;
-    width: $ancho;
-}
-
-app-galeria{
+app-galeria {
     @extend app-sidenav;
     width: $ancho;
 }
 
 .panels app-sidenav {
     float: left;
-    width: 200px; /* adjust width as needed */
-  }
+    width: 200px;
+    /* adjust width as needed */
+}
 
-  .panels router-outlet {
-    margin-left: 220px; /* adjust margin as needed */
-  }
+.panels router-outlet {
+    margin-left: 220px;
+    /* adjust margin as needed */
+}
