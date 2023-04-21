@@ -14,6 +14,8 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { ProductosComponent } from './pages/productos/productos.component';
 import { ListarProductosComponent } from './pages/productos/listar-productos/listar-productos.component';
 import { CrearProductosComponent } from './pages/productos/crear-productos/crear-productos.component';
+import { ListaComponent } from './shared/components/lista/lista.component';
+import { DetalleProductoComponent } from './pages/productos/detalle-producto/detalle-producto.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { CrearProductosComponent } from './pages/productos/crear-productos/crear
     NotFoundComponent,
     ProductosComponent,
     ListarProductosComponent,
-    CrearProductosComponent
+    CrearProductosComponent,
+    ListaComponent,
+    DetalleProductoComponent
   ],
   imports: [
     BrowserModule,
