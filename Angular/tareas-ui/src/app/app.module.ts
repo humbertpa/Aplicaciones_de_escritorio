@@ -11,6 +11,9 @@ import { SidenavComponent } from './layouts/sidenav/sidenav.component';
 import { GaleriaComponent } from './pages/galeria/galeria.component';
 import { TareasComponent } from './pages/tareas/tareas.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { ProductosComponent } from './pages/productos/productos.component';
+import { ListarProductosComponent } from './pages/productos/listar-productos/listar-productos.component';
+import { CrearProductosComponent } from './pages/productos/crear-productos/crear-productos.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     SidenavComponent,
     GaleriaComponent,
     TareasComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    ProductosComponent,
+    ListarProductosComponent,
+    CrearProductosComponent
   ],
   imports: [
     BrowserModule,
