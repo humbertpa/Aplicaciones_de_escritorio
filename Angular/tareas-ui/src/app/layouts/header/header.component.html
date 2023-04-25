@@ -4,4 +4,7 @@
     <a routerLink="galeria">Galeria</a>
     <a routerLink="tareas">Tareas</a>
     <a routerLink="productos">Productos</a>
+    <a routerLink="login">Login</a>
+    producto Seleccionado: {{producto.nombre}}
+    <button *ngIf="loginStatus" (click)="logOut()">Cerrar Sesion</button>
 </div>

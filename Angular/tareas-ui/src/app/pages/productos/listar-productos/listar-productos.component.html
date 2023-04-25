@@ -1,3 +1,5 @@
-<p>listar-productos works!</p>
-Producto Seleccionado: {{producto.nombre || 'ninguno'}}
-<app-lista [items]="productos" (seleccion)="mostrarItem($event)"></app-lista>
+<div>
+    <p>listar-productos works!</p>
+    Producto Seleccionado: {{producto.nombre || 'ninguno'}}
+    <app-lista [items]="productos" (seleccion)="mostrarItem($event)"></app-lista>
+</div>

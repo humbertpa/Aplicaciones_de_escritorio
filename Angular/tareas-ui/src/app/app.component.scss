@@ -1,8 +1,8 @@
-.panels,app-header,app-footer{
-    margin: 0%;
+* {
+    border-style: solid;
+    border-width: 2px;
+    border-color: red;
 }
-
-
 
 .panels {
     height: 100%;
@@ -12,23 +12,10 @@
 $ancho: 30%;
 
 app-sidenav {
-    float: left;
     height: 100%;
     width: $ancho;
 }
 
-app-galeria {
-    @extend app-sidenav;
-    width: $ancho;
-}
-
-.panels app-sidenav {
-    float: left;
-    width: 200px;
-    /* adjust width as needed */
-}
-
-.panels router-outlet {
-    margin-left: 220px;
-    /* adjust margin as needed */
+app-header {
+    display: flex;
 }

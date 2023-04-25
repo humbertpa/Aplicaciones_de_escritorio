@@ -8,11 +8,13 @@ import { ProductosComponent } from './pages/productos/productos.component';
 import { ListarProductosComponent } from './pages/productos/listar-productos/listar-productos.component';
 import { CrearProductosComponent } from './pages/productos/crear-productos/crear-productos.component';
 import { DetalleProductoComponent } from './pages/productos/detalle-producto/detalle-producto.component';
+import { LoginComponent } from './pages/login/login.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'tareas', pathMatch: 'full' },
   { path: 'tareas', component: TareasComponent },
   { path: 'galeria', component: GaleriaComponent },
+  { path: 'login', component: LoginComponent },
   {
     path: 'productos', component: ProductosComponent, children: [
       { path: '', component: ListarProductosComponent },
